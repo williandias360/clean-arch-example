@@ -7,7 +7,7 @@ use App\Infra\Http\Controllers\Presentation;
 final class ExportRegistrationPresenter implements Presentation {
 
     public function output(array $data): string {
-        return json_encode($data);
+        return json_encode($data, JSON_PRETTY_PRINT);
     }
 
 }
